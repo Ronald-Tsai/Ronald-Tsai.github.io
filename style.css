@@ -1,26 +1,123 @@
+@font-face { font-family: Jost-Medium; src: url('fonts/Jost-Medium.ttf');}
+@font-face { font-family: Jost-Regular; src: url('fonts/Jost-Regular.ttf');}
 body{
-    background-color: #131316;
+    font-family: Jost-Medium;
+    background-color: #23395b !important;
     color: #ffffff;
     padding: 0;
     margin: 0;
 }
 
-section{
-    display:grid;
-    place-items: center;
-    align-content: center;
-    min-height: 100vh;
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: #161925;
 }
 
-.hidden{
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
+.nav-item {
+    font-family: Jost-Regular;
+    color: rgb(255, 255, 255);
 }
 
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background-color: #161925;
+    background-size:cover;
+    position:relative;
 }
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+
+.hero-text {
+    font-family: Jost-Medium;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.aboutsection {
+    /* padding-top: 20px; */
+    height:100vh;
+    background-color: #23395b;
+    background-size:cover;
+    position:relative;
+    font-family: Jost-Medium;
+    color: #ffffff;
+}
+
+.projectsection {
+    /* padding-top: 70px; */
+    height:100vh;
+    background-color: #23395b;
+    background-size:cover;
+    position:relative;
+    font-family: Jost-Medium;
+    color: white;
+}
+
+.linkssection {
+    /* padding-top: 56px; */
+    height: 90vh;
+    background-color: #23395b;
+    background-size:cover;
+    position:relative;
+    font-family: Jost-Medium;
+    color: white;
+}
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+/* projects section css */
+.projectsText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.projectsIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card {
+    color:black;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .projectsIcon {
+    color: #cbf7ed;
+}
+.projectsText:hover {
+    border: 2px solid #cbf7ed;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #7a887a;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #161925;
+    color: white;
+    font-size: 1rem;
+    font-family: Jost-Regular;
+    text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+  }
