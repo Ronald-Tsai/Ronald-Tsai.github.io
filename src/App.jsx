@@ -51,15 +51,15 @@ function App() {
             >
               Resume
             </button>
-            {/* <button
+            <button
               onClick={toggleDarkMode}
               className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
             >
               {isDarkMode ? '☀️' : '🌙'}
-            </button> */}
-            <button onClick={toggleDarkMode} className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200">
-              <DarkModeSwitch />
             </button>
+            {/* <button onClick={toggleDarkMode} className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200">
+              <DarkModeSwitch />
+            </button> */}
           </div>
         </div>
       </nav>
@@ -107,7 +107,7 @@ function App() {
             <h2 className="text-4xl font-bold mb-6">Contact</h2>
             <p className="text-lg max-w-2xl">
               <a href="https://www.linkedin.com/in/ronald-tsai/" className="text-blue-500 hover:underline">LinkedIn </a>
-              Feel free to reach out via email at <a href="mailto:your.email@example.com" className="text-blue-500 hover:underline">your.email@example.com</a>
+              {/* Feel free to reach out via email at <a href="mailto:your.email@example.com" className="text-blue-500 hover:underline">your.email@example.com</a> */}
             </p>
           </div>
         </section>
