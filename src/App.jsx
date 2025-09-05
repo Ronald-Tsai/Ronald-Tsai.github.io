@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import './index.css';
 import DarkModeSwitch from './DarkModeSwitch';
+import Socials from './Socials';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => 
@@ -49,7 +50,7 @@ function App() {
               onClick={() => scrollToSection(contactRef)}
               className="hover:text-blue-500 transition-colors duration-200"
             >
-              Resume
+              Contact
             </button>
             <button
               onClick={toggleDarkMode}
@@ -69,8 +70,8 @@ function App() {
         {/* Hero Section */}
         <section className="min-h-screen flex items-center justify-center">
           <div className="text-center opacity-0 animate-fadeIn">
-            <h2 className="text-5xl font-bold mb-4">Hi, I'm Ronald Tsai.</h2>
-            <p className="text-xl">Welcome to my website!</p>
+            <h2 className="text-6xl font-bold mb-4">Hi, I'm Ronald Tsai.</h2>
+            <p className="text-3xl">Welcome to my website!</p>
           </div>
         </section>
 
@@ -79,7 +80,7 @@ function App() {
           <div className="opacity-0 animate-fadeIn">
             <h2 className="text-4xl font-bold mb-6">About Me</h2>
             <p className="text-lg max-w-2xl">
-              I will update this later.
+              Currently, I am a junior at Purdue University double majoring in Computer Science and Linguistics and minoring in English. Given my spanning interests in both technology and language, I am passionate about exploring the intersection of these interdisciplinary fields to better myself, my community, and the world (hopefully). Thanks for stopping by :)
             </p>
           </div>
         </section>
@@ -90,24 +91,23 @@ function App() {
             <h2 className="text-4xl font-bold mb-6">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-4 rounded-lg shadow-md bg-white dark:bg-gray-800 transition-transform duration-300 hover:scale-105">
-                <h3 className="text-2xl font-semibold">Project 1</h3>
-                <p>I will add this later.</p>
+                <h3 className="text-2xl font-semibold"><a href="http://whatsupboilerup.com">What's Up Boiler Up</a></h3>
+                <br></br><p>I co-developed a full-stack web application using an event listing page’s RSS feed to help students find upcoming events on Purdue University’s campus through an interactive geographic map. Specifically, I integrated the map using React and managed web-scraped geographic data using Python.</p>
               </div>
               <div className="p-4 rounded-lg shadow-md bg-white dark:bg-gray-800 transition-transform duration-300 hover:scale-105">
-                <h3 className="text-2xl font-semibold">Project 2</h3>
-                <p>I will add this later.</p>
+                <h3 className="text-2xl font-semibold"><a href="https://github.com/qi116/essay-grader">NivelMate</a></h3>
+                <br></br><p>I co-developed an AI essay grader that evaluates essays based on a pre-trained NLP model by creating the user interface with React and establishing front-end to back-end communications.</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Resume Section */}
+        {/* Contact Section */}
         <section ref={contactRef} className="min-h-screen flex items-center">
           <div className="opacity-0 animate-fadeIn">
             <h2 className="text-4xl font-bold mb-6">Contact</h2>
             <p className="text-lg max-w-2xl">
-              <a href="https://www.linkedin.com/in/ronald-tsai/" className="text-blue-500 hover:underline">LinkedIn </a>
-              {/* Feel free to reach out via email at <a href="mailto:your.email@example.com" className="text-blue-500 hover:underline">your.email@example.com</a> */}
+              <Socials />
             </p>
           </div>
         </section>
