@@ -48,28 +48,6 @@ const Socials = () => {
     </a>
     <div class="tooltip">GitHub</div>
   </li>
-  <li class="icon-content">
-    <a
-      href="mailto:rliutsai@gmail.com"
-      aria-label="Email"
-      data-social="email"
-    >
-      <div class="filled"></div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-email"
-        viewBox="0 0 16 16"
-        // xml:space="preserve"
-      >
-        <path d="M2 2H14C14.55 2 15 2.45 15 3V13C15 13.55 14.55 14 14 14H2C1.45 14 1 13.55 1 13V3C1 2.45 1.45 2 2 2Z" fill="black"/>
-  <path d="M15 3L8 8L1 3" fill="black" stroke="white" stroke-width="1"/>
-      </svg>
-    </a>
-    <div class="tooltip">Email</div>
-  </li>
 </ul>
 
   );
