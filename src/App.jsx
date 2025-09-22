@@ -84,7 +84,7 @@ function App() {
               Linguistics and minoring in English. Given my spanning interests in both technology and 
               language, I am passionate about exploring the intersection of these interdisciplinary 
               fields to better myself, my community, and the world (hopefully). View my resume
-              <a href="https://github.com/Ronald-Tsai/Ronald-Tsai.github.io/tree/main/">here</a>. Thanks for stopping by :)
+              <a href="https://github.com/Ronald-Tsai/Ronald-Tsai.github.io/blob/main/resume/Ronald_Tsai_Resume.pdf">here</a>. Thanks for stopping by :)
             </p>
           </div>
         </section>
