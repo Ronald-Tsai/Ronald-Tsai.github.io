@@ -80,7 +80,11 @@ function App() {
           <div className="opacity-0 animate-fadeIn">
             <h2 className="text-4xl font-bold mb-6">About Me</h2>
             <p className="text-lg max-w-2xl">
-              Currently, I am a junior at Purdue University double majoring in Computer Science and Linguistics and minoring in English. Given my spanning interests in both technology and language, I am passionate about exploring the intersection of these interdisciplinary fields to better myself, my community, and the world (hopefully). Thanks for stopping by :)
+              Currently, I am a junior at Purdue University double majoring in Computer Science and 
+              Linguistics and minoring in English. Given my spanning interests in both technology and 
+              language, I am passionate about exploring the intersection of these interdisciplinary 
+              fields to better myself, my community, and the world (hopefully). View my resume
+              <a href="https://github.com/Ronald-Tsai/Ronald-Tsai.github.io/tree/main/">here</a>. Thanks for stopping by :)
             </p>
           </div>
         </section>
@@ -89,14 +93,30 @@ function App() {
         <section ref={projectsRef} className="min-h-screen flex items-center">
           <div className="opacity-0 animate-fadeIn">
             <h2 className="text-4xl font-bold mb-6">Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="p-4 rounded-lg shadow-md bg-white dark:bg-gray-800 transition-transform duration-300 hover:scale-105">
-                <h3 className="text-2xl font-semibold"><a href="http://whatsupboilerup.com">What's Up Boiler Up</a></h3>
-                <br></br><p>I co-developed a full-stack web application using an event listing page’s RSS feed to help students find upcoming events on Purdue University’s campus through an interactive geographic map. Specifically, I integrated the map using React and managed web-scraped geographic data using Python.</p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', gridAutoRows: '1fr' }}>
+              <div>
+                <a href="https://akerkar2005.github.io/whatsupboilerup">
+                  <div className={`p-4 rounded-lg shadow-md bg-white ${isDarkMode ? 'dark:bg-gray-800': 'dark:bg-gray-200'} transition-transform duration-300 hover:scale-105`}>
+                    <h3 className="text-2xl font-semibold">What's Up Boiler Up</h3>
+                    <br></br><p>I co-developed a full-stack web application using an event listing page’s RSS feed to help students find upcoming events on Purdue University’s campus through an interactive geographic map. Specifically, I integrated the map using React and managed web-scraped geographic data using Python.</p>
+                  </div>
+                </a>
               </div>
-              <div className="p-4 rounded-lg shadow-md bg-white dark:bg-gray-800 transition-transform duration-300 hover:scale-105">
-                <h3 className="text-2xl font-semibold"><a href="https://github.com/qi116/essay-grader">NivelMate</a></h3>
-                <br></br><p>I co-developed an AI essay grader that evaluates essays based on a pre-trained NLP model by creating the user interface with React and establishing front-end to back-end communications.</p>
+              <div>
+                <a href="https://github.com/Ronald-Tsai/Taiwanese-Hokkien">
+                  <div className={`p-4 rounded-lg shadow-md bg-white ${isDarkMode ? 'dark:bg-gray-800': 'dark:bg-gray-200'} transition-transform duration-300 hover:scale-105`}>
+                    <h3 className="text-2xl font-semibold">Taiwanese Hokkien Educational Tool</h3>
+                    <br></br><p>I am currently developing a full-stack interactive web application to educate about the Taiwanese Hokkien language using open-source translation models and other publicly available resources.</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="https://github.com/qi116/essay-grader">
+                  <div className={`p-4 rounded-lg shadow-md bg-white ${isDarkMode ? 'dark:bg-gray-800': 'dark:bg-gray-200'} transition-transform duration-300 hover:scale-105`}>
+                    <h3 className="text-2xl font-semibold">NivelMate - AI Essay Grader</h3>
+                    <br></br><p>I co-developed an AI essay grader that evaluates essays based on a pre-trained NLP model by creating the user interface with React and establishing front-end to back-end communications.</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
