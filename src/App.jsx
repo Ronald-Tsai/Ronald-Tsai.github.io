@@ -80,11 +80,10 @@ function App() {
           <div className="opacity-0 animate-fadeIn">
             <h2 className="text-4xl font-bold mb-6">About Me</h2>
             <p className="text-lg max-w-2xl">
-              Currently, I am a junior at Purdue University double majoring in Computer Science and 
-              Linguistics and minoring in English. Given my spanning interests in both technology and 
+              Currently, I am a junior at Purdue University pursuing a B.S. in Computer Science and 
+              a B.A. in Linguistics with a minor in English. Given my spanning interests in both technology and 
               language, I am passionate about exploring the intersection of these interdisciplinary 
-              fields to better myself, my community, and the world (hopefully). View my resume
-              <a href="https://github.com/Ronald-Tsai/Ronald-Tsai.github.io/blob/main/resume/Ronald_Tsai_Resume.pdf">here</a>. Thanks for stopping by :)
+              fields to better myself, my community, and the world (hopefully). Thanks for stopping by :)
             </p>
           </div>
         </section>
@@ -95,18 +94,18 @@ function App() {
             <h2 className="text-4xl font-bold mb-6">Projects</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', gridAutoRows: '1fr' }}>
               <div>
-                <a href="https://akerkar2005.github.io/whatsupboilerup">
+                <a href="https://github.com/Ronald-Tsai/Taiwanese-Hokkien">
                   <div className={`p-4 rounded-lg shadow-md bg-white ${isDarkMode ? 'dark:bg-gray-800': 'dark:bg-gray-200'} transition-transform duration-300 hover:scale-105`}>
-                    <h3 className="text-2xl font-semibold">What's Up Boiler Up</h3>
-                    <br></br><p>I co-developed a full-stack web application using an event listing page’s RSS feed to help students find upcoming events on Purdue University’s campus through an interactive geographic map. Specifically, I integrated the map using React and managed web-scraped geographic data using Python.</p>
+                    <h3 className="text-2xl font-semibold">Taiwanese Hokkien Educational Tool</h3>
+                    <br></br><p>I am developing a full-stack interactive web application to teach the Taiwanese Hokkien language and address the challenges of integrating low-resource languages into digital tools for research and education. Currently, I am implementing open-source back-end translation and speech synthesis models with JavaScript and a front-end user interface with React.</p>
                   </div>
                 </a>
               </div>
               <div>
-                <a href="https://github.com/Ronald-Tsai/Taiwanese-Hokkien">
+                <a href="https://akerkar2005.github.io/whatsupboilerup">
                   <div className={`p-4 rounded-lg shadow-md bg-white ${isDarkMode ? 'dark:bg-gray-800': 'dark:bg-gray-200'} transition-transform duration-300 hover:scale-105`}>
-                    <h3 className="text-2xl font-semibold">Taiwanese Hokkien Educational Tool</h3>
-                    <br></br><p>I am currently developing a full-stack interactive web application to educate about the Taiwanese Hokkien language using open-source translation models and other publicly available resources.</p>
+                    <h3 className="text-2xl font-semibold">What's Up Boiler Up - Event Finder</h3>
+                    <br></br><p>I co-developed a full-stack web application to help students find upcoming events on Purdue University’s campus through an interactive map by using an event listing page’s RSS feed and extracting its data daily with Python. Specifically, I created the user interface with React and integrated the mapping features based on web-scraped geographic data with Python.</p>
                   </div>
                 </a>
               </div>
@@ -114,7 +113,7 @@ function App() {
                 <a href="https://github.com/qi116/essay-grader">
                   <div className={`p-4 rounded-lg shadow-md bg-white ${isDarkMode ? 'dark:bg-gray-800': 'dark:bg-gray-200'} transition-transform duration-300 hover:scale-105`}>
                     <h3 className="text-2xl font-semibold">NivelMate - AI Essay Grader</h3>
-                    <br></br><p>I co-developed an AI essay grader that evaluates essays based on a pre-trained NLP model by creating the user interface with React and establishing front-end to back-end communications.</p>
+                    <br></br><p>I co-developed an AI essay grader that evaluates essays on various topics based on a pre-trained NLP model. I designed page navigation with React and ensured reliable front-end to back-end communications for API calls with Python.</p>
                   </div>
                 </a>
               </div>
